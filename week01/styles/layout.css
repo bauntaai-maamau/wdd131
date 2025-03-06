@@ -1,0 +1,53 @@
+.parent {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header {
+    background: lightgray;
+    padding: 2rem;
+    grid-column: 1 / 4;
+}
+
+main {
+    background: lightblue;
+    grid-column: 2 / 3;
+}
+
+.right-sidebar {
+    background: lightseagreen;
+    padding: 1rem;
+    grid-column: 3 / 4;
+}
+
+footer {
+    background: wheat;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    color: #666;
+}
