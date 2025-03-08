@@ -66,6 +66,7 @@ main {
     border-radius: 12px;
     min-width: 450px;
     max-width: 1000px;
+    border: 1px solid lightgrey;
 
 }
 
@@ -121,6 +122,8 @@ p {
     margin-right: 2px;
     margin-bottom: 20px;
     border-radius: 12px;
+    border: 1px solid lightgrey;
+    
 }
 
 footer {
