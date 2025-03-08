@@ -75,7 +75,7 @@ h2 {
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
     font-family: "Roboto", sans-serif;
-    font-weight: 100;
+    font-weight: 200;
 
 }
 
@@ -83,7 +83,7 @@ h3 {
     padding: 5px;
     text-align: center;
     font-family: "Roboto", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 
 }
 
@@ -137,7 +137,7 @@ footer {
 footer p {
     color: white;
     font-family: "Roboto", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     margin: 0px;
     padding: auto;
 }
