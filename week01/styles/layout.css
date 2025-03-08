@@ -86,9 +86,11 @@ p {
 
 footer {
     background: #618985;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     grid-column: 1 / 4;
     color: white;
+    margin-right: 35px;
+    margin-left: 35px;
 }
 
