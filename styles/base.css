@@ -23,6 +23,7 @@ h1 {
     padding: 30px;
     margin: 0px;
     color: white;
+    
 
 }
 
@@ -56,6 +57,7 @@ h2 {
     margin-top: 0px;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
+    font-family: 'Inter';
 
 }
 
@@ -67,6 +69,7 @@ h3 {
 p {
     color: black;
     padding: 1rem;
+    font-family: 'Poppins';
 }
 
 .card img {
