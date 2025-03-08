@@ -39,6 +39,20 @@ nav ul {
 
 }
 
+.navigation a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: color 0.3s, background-color 0.3s;
+    font-size: large;
+}
+
+.navigation a:hover {
+    color: whitesmoke;
+    background-color: #E3B23C;
+    border-radius: 5px;
+}
+
 main {
     grid-column: 2 / 3;
     margin: 0px;
