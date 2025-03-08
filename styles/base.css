@@ -129,6 +129,8 @@ footer {
     color: white;
     margin-left: 15px;
     margin-right: 15px;
+    margin: 0px;
+    padding: auto;
 
 }
 
@@ -136,4 +138,6 @@ footer p {
     color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
+    margin: 0px;
+    padding: auto;
 }
