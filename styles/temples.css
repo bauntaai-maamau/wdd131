@@ -1,0 +1,39 @@
+body {
+    background-color: #f0f0f0;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #F2E3BC;
+    padding: 1 rem;
+}
+
+nav a {
+    color: #414535;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #A24857;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+footer {
+    background: #F2E3BC;
+    color: #414535;
+    text-align: center;
+    grid-column: 1 / 4;
+    padding: 0.2rem;
+}
