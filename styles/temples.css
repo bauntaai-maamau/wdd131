@@ -3,6 +3,11 @@ body {
 
 }
 
+header {
+    max-width: 1200px;
+    margin: auto;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -25,9 +30,14 @@ nav a:hover {
     border-radius: 5px;
 }
 
-main {
-    max-width: 860px;
-    margin: 0 auto;
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    background-color: ;
+    justify-items: center;
 }
 
 footer {
@@ -36,4 +46,6 @@ footer {
     text-align: center;
     grid-column: 1 / 4;
     padding: 0.2rem;
+    max-width: 1200px;
+    margin: auto;
 }
