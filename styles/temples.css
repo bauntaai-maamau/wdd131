@@ -23,9 +23,26 @@ h2 {
     color: #414535;
 }
 
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: _________;
+    ________;
+    ________;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
 .navigation {
-    display: flex;
-    flex-direction: column;
+    display: none;
     gap: 20px;
     justify-content: space-evenly;
     align-items: center;
@@ -43,6 +60,15 @@ h2 {
     text-decoration: none;
     background-color: #bbb;
     color: #333;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.active::before {
+    content: "📍";
 }
 
 .container {
@@ -82,3 +108,6 @@ footer p {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
+
+
+

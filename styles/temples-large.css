@@ -7,6 +7,10 @@
         justify-content: space-between;
     }
 
+    #menu {
+        display: none;
+    }
+
     main {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -17,6 +21,7 @@
     }
 
     .navigation {
+        display: flex;
         flex-direction: row;
         padding: 0;
     }
