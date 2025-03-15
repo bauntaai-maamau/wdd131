@@ -1,52 +1,55 @@
 body {
     background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
 header {
     max-width: 990px;
     margin: auto;
-    background: #F2E3BC;
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
     align-items: center;
 }
 
 h1 {
+    background-color: #96BBBB;
+    color: #414535;
+    text-align: left;
+}
+
+h2 {
     text-align: center;
-    color: #618985;
+    color: #414535;
 }
 
 .navigation {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0;
+    flex-direction: column;
     gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
     list-style-type: none;
 }
 
 .navigation a {
-    color: #414535;
+    color: black;
     text-decoration: none;
-    padding: 10px 15px;
     font-size: large;
     transition: background-color 0.3s;
 }
 
 .navigation a:hover {
-    color: white;
-    background-color: #A24857;
-    border-radius: 5px;
     text-decoration: none;
+    background-color: #bbb;
+    color: #333;
 }
 
 .container {
     margin: auto;
     max-width: 990px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 1rem;
+    grid-template-columns: 1fr;
     justify-items: center;
 }
 
@@ -57,6 +60,16 @@ figcaption {
 
 footer {
     background: #F2E3BC;
+    color: #414535;
+    text-align: center;
+    grid-column: 1 / 4;
+    padding: 0.2rem;
+    margin: auto;
+    max-width: 990px;
+}
+
+footer {
+    background-color: #96BBBB;
     color: #414535;
     text-align: center;
     grid-column: 1 / 4;

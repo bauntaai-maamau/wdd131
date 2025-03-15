@@ -1,10 +1,43 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 41em) {
     header {
-        background-color: ;
         color: #414535;
+        background: #F2E3BC;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
     }
 
     main {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    h1,h2 {
+        color: #618985;
+        background-color: transparent;
+    }
+
+    .navigation {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .navigation a {
+        padding: 10px 15px;
+        font-size: larger;
+    }
+
+    .navigation a:hover {
+        color: white;
+        background-color: #A24857;
+        border-radius: 5px;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;     
+    }
+
+    footer {
+        background: #F2E3BC;
+    }
+
 }
