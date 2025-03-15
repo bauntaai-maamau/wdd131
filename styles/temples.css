@@ -5,21 +5,29 @@ body {
 header {
     max-width: 990px;
     margin: auto;
+    background: #F2E3BC;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
 }
 
-nav {
+.navigation {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #F2E3BC;
-    padding: 1 rem;
+    padding: 0;
+    gap: 20px;
+    list-style-type: none;
 }
 
-nav a {
+.navigation a {
     color: #414535;
     text-decoration: none;
     padding: 10px 15px;
@@ -27,10 +35,11 @@ nav a {
     transition: background-color 0.3s;
 }
 
-nav a:hover {
+.navigation a:hover {
     color: white;
     background-color: #A24857;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .container {
@@ -43,6 +52,10 @@ nav a:hover {
     justify-items: center;
 }
 
+figcaption {
+    text-align: center;
+}
+
 footer {
     background: #F2E3BC;
     color: #414535;
@@ -51,4 +64,9 @@ footer {
     padding: 0.2rem;
     margin: auto;
     max-width: 990px;
+}
+
+footer p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
 }
