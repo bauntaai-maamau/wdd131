@@ -2,17 +2,14 @@
     header {
         color: #414535;
         background: #F2E3BC;
-        display: flex;
         padding: 20px;
         justify-content: space-between;
+        display: flex;
+        flex-direction: row:
     }
 
     #menu {
         display: none;
-    }
-
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
     }
 
     h1,h2 {
@@ -27,7 +24,7 @@
     }
 
     .navigation a {
-        padding: 10px 15px;
+        padding: 4px 3px;
         font-size: larger;
     }
 
@@ -37,8 +34,12 @@
         border-radius: 5px;
     }
 
+    .navigation.open {
+        flex-direction: row;
+    }
+
     .container {
-        grid-template-columns: 1fr 1fr 1fr;     
+        grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
     }
 
     footer {
@@ -46,3 +47,6 @@
     }
 
 }
+
+
+

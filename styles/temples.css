@@ -10,6 +10,8 @@ header {
     max-width: 990px;
     margin: auto;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 h1 {
@@ -21,6 +23,7 @@ h1 {
 h2 {
     text-align: center;
     color: #414535;
+    background-color: #96BBBB;
 }
 
 #menu {
@@ -47,19 +50,23 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
+    background-color: #F2E3BC;
 }
 
 .navigation a {
     color: black;
     text-decoration: none;
     font-size: large;
+    display: block;
+    width: 100%;
     transition: background-color 0.3s;
+    text-align: center;
 }
 
 .navigation a:hover {
     text-decoration: none;
-    background-color: #bbb;
-    color: #333;
+    color: white;
+    background-color: #A24857;
 }
 
 .navigation.open {
