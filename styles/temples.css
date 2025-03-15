@@ -14,8 +14,7 @@ header {
 
 h1 {
     text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 200;
+    color: #618985;
 }
 
 .navigation {
@@ -31,13 +30,13 @@ h1 {
     color: #414535;
     text-decoration: none;
     padding: 10px 15px;
-    font-size: 1.2rem;
+    font-size: large;
     transition: background-color 0.3s;
 }
 
 .navigation a:hover {
     color: white;
-    background-color: #A24857;
+    background-color: #618985;
     border-radius: 5px;
     text-decoration: none;
 }
@@ -54,6 +53,7 @@ h1 {
 
 figcaption {
     text-align: center;
+    color: #414535;
 }
 
 footer {
