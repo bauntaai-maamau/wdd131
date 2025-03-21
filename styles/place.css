@@ -10,20 +10,77 @@ header {
     margin: auto;
     align-items: center;
     justify-content: space-between;
-    /* background-color: #003F87; */
-    background-color: #FCD116;
     position: relative;
     padding-bottom: 10px;
+    background-color: #FCD116;
 }
 
 
 h1 {
-    background-color: #CE1126;
+    background-color: #CE1126; 
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 0px;
+    padding: 15px;
 }
 
+
+h2 {
+    padding: 15px;
+}
+
+.data-box {
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    padding-top: 5px;
+}
+
+.data-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.data-text {
+    font-weight: bold;
+    text-align: right;
+    width: 50%;
+}
+
+.data-value {
+    text-align: left;
+    width: 50%;
+    margin-left: 10px;
+}
+
+
+.weather-box {
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+.weather-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.weather-text {
+    font-weight: bold;
+    text-align: right;
+    width: 50%;
+}
+
+.weather-value {
+    text-align: left;
+    width: 50%;
+    margin-left: 10px;
+}
 
 
 
@@ -33,12 +90,13 @@ h1 {
 
 
 footer {
-    background-color: #CE1126;
-    color: #FFFFFF;;
+    background-color: #003F87;
+    color: #FFFFFF;
     text-align: center;
     grid-column: 1 / 4;
     margin: auto;
     max-width: 990px;
+    padding: 5px;
 }
 
 footer p {
