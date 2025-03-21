@@ -1,16 +1,10 @@
 @media screen and (min-width: 36em) {
     * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-    .hero {
-        display: none;
+        margin: 0;
+        padding: 0;
     }
 
     .big-box {
-        /* background-color: lightgrey; */
         margin: auto;
         max-width: 1200px;
         min-height: 570px;
@@ -20,59 +14,54 @@
         position: relative;
     }
 
-    .data-header {
+    .hero {
+        display: none;
+    }
+    
+    .weather-header {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+
+    .data-header, .weather-header {
         background-color: #FCD116;
+        color: #003F87;
         text-align: left;
+        padding: 3px 10px;
         margin-right: 20px;
         margin-left: -10px;
-        padding: 3px 10px;
     }
 
     .data-box {
-        width: 210px;
-        background-color: #FFFFFF;
-        opacity: 0.8;
-        box-sizing: border-box;
-        position: absolute;
         top: 50px;
         left: 25px;
     }
 
     .weather-box {
-        width: 200px;
-        background-color: #FFFFFF;
-        opacity: 0.8;
-        box-sizing: border-box;
-        position: absolute;
         bottom: 50px;
         right: 25px;
     }
 
-    .weather-header {
-        display: flex;
-        text-align: left;
-        justify-content: space-between;
-        background-color: #FCD116;
-        padding: 3px 10px;
-        padding-right: 30px;
-        margin-right: 20px;
-        margin-left: -10px;
+    .data-box, .weather-box {
+        width: 210px;
+        background-color: #FFFFFF;
+        opacity: 0.8;
+        box-sizing: border-box;
+        position: absolute;
     }
 
     .weather-icon {
         width: 30px;
+        content: url('../images/weather-emoticon.svg');
+    }
+
+    .weather-icon img {
+        display: none;
     }
 
     footer {
-        padding: 5px;
+        padding: 18px;
     }
        
-}
-
-
-@media screen and (min-width: 36em) {
-    .weather-icon {
-        content: url('../images/weather-emoticon.svg');
-        /* Change to a different icon for larger screens */
-    }
 }

@@ -1,12 +1,5 @@
 * {
-    /* margin: 0;
-    padding: 0; */
     box-sizing: border-box;
-}
-
-
-.big-box {
-    background-image: none;
 }
 
 header {
@@ -48,60 +41,34 @@ h1 {
 }
 
 .data-box {
-    margin: auto;
-    text-align: center;
-    max-width: 1200px;
-    padding: 5px 0 20px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.data-item {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 10px 0;
-}
-
-.data-text {
-    font-weight: bold;
-    text-align: right;
-    width: 50%;
-}
-
-.data-value {
-    text-align: left;
-    width: 50%;
-    margin-left: 10px;
-}
-
-
-.weather-box {
+.data-box, .weather-box {
     margin: auto;
     text-align: center;
     max-width: 1200px;
     padding: 5px 0 20px 0;
 }
 
-.weather-item {
+.data-item, .weather-item {
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 10px 0;
 }
 
-.weather-text {
+.data-text, .weather-text {
     font-weight: bold;
     text-align: right;
     width: 50%;
 }
 
-.weather-value {
+.data-value, .weather-value {
     text-align: left;
     width: 50%;
     margin-left: 10px;
 }
-
-
 
 
 footer {
