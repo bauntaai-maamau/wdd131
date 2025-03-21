@@ -1,11 +1,11 @@
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 46em) {
     * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-    .data-header h2 {
+    .data-header {
         background-color: bisque;
         text-align: left;
         margin-right: 20px;
@@ -43,7 +43,7 @@
 }
 
 
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 46em) {
     .weather-icon {
         content: url('Users/bauntaaimaamau/Documents/2025/BYU Pathway Worldwide/wdd131/wdd131/images/weather-emoticon.svg');
         /* Change to a different icon for larger screens */
