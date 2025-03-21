@@ -11,7 +11,7 @@ header {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 18px;
     background-color: #FCD116;
 }
 
@@ -23,6 +23,29 @@ h1 {
     margin-bottom: 0px;
     padding: 15px;
 }
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: 990px;
+    margin: auto;
+    height: 100vh;
+    /* You can adjust the height if you want it to be smaller or based on content */
+    overflow: hidden;
+    padding-bottom: 6px;
+    background-color: #CE1126;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the div */
+    object-position: center;
+    /* Keeps the image centered */
+}
+
 
 
 h2 {
@@ -82,10 +105,6 @@ h2 {
     width: 50%;
     margin-left: 10px;
 }
-
-
-
-
 
 
 
