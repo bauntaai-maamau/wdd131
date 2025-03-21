@@ -6,7 +6,7 @@
 
 
 header {
-    max-width: 990px;
+    max-width: 1200px;
     margin: auto;
     align-items: center;
     justify-content: space-between;
@@ -28,10 +28,9 @@ h1 {
 .hero {
     position: relative;
     width: 100%;
-    max-width: 990px;
+    max-width: 1200px;
     margin: auto;
     height: 100vh;
-    /* You can adjust the height if you want it to be smaller or based on content */
     overflow: hidden;
     padding-bottom: 6px;
     background-color: #CE1126;
@@ -41,21 +40,15 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Ensures the image covers the div */
     object-position: center;
-    /* Keeps the image centered */
 }
 
 
-
-h2 {
-    /* padding: 15px; */
-}
 
 .data-box {
     margin: auto;
     text-align: center;
-    max-width: 990px;
+    max-width: 1200px;
     padding: 5px 0 20px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -83,7 +76,7 @@ h2 {
 .weather-box {
     margin: auto;
     text-align: center;
-    max-width: 990px;
+    max-width: 1200px;
     padding: 5px 0 20px 0;
 }
 
@@ -115,7 +108,7 @@ footer {
     text-align: center;
     grid-column: 1 / 4;
     margin: auto;
-    max-width: 990px;
+    max-width: 1200px;
     padding: 5px;
 }
 

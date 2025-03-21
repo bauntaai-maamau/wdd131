@@ -1,3 +1,51 @@
 @media screen and (min-width: 36em) {
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+    .data-header h2 {
+        background-color: bisque;
+        text-align: left;
+        margin-right: 20px;
+        margin-left: -10px;
+        padding: 5px 15px;
+    }
+
+    .data-box {
+            width: 260px;
+            background-color: aqua;
+            box-sizing: border-box;
+        }
+
+    .weather-box {
+        width: 260px;
+        background-color: aqua;
+        box-sizing: border-box;
+    }
+
+    .weather-header {
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        background-color: bisque;
+        padding: 5px 15px;
+        padding-right: 30px;
+        margin-right: 20px;
+        margin-left: -10px;
+    }
+
+    .weather-icon {
+        width: 30px;
+    }
+       
+}
+
+
+@media screen and (min-width: 36em) {
+    .weather-icon {
+        content: url('Users/bauntaaimaamau/Documents/2025/BYU Pathway Worldwide/wdd131/wdd131/images/weather-emoticon.svg');
+        /* Change to a different icon for larger screens */
+    }
 }
