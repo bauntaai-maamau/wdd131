@@ -14,6 +14,11 @@
         position: relative;
     }
 
+    h1 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+    }
+
     .hero {
         display: none;
     }
@@ -21,13 +26,13 @@
     .weather-header {
         display: flex;
         justify-content: space-between;
-        padding-right: 30px;
+        padding-right: 20px;
     }
 
     .data-header, .weather-header {
         background-color: #FCD116;
         text-align: left;
-        padding: 3px 10px;
+        padding: 3px 20px;
         margin-right: 20px;
         margin-left: -10px;
     }
@@ -44,10 +49,13 @@
 
     .data-box, .weather-box {
         width: 210px;
+        padding-left: 3px;
         background-color: #FFFFFF;
         opacity: 0.8;
         box-sizing: border-box;
         position: absolute;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
     }
 
     .weather-icon {
@@ -62,5 +70,9 @@
     footer {
         padding: 18px;
     }
-       
+
+    footer p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+    }
 }

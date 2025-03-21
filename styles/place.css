@@ -10,6 +10,8 @@ header {
     position: relative;
     padding-bottom: 18px;
     background-color: #FCD116;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
 }
 
 
@@ -49,6 +51,7 @@ h1 {
     text-align: center;
     max-width: 1200px;
     padding: 5px 0 20px 0;
+    font-family: "Poppins", sans-serif;
 }
 
 .data-item, .weather-item {
@@ -59,15 +62,17 @@ h1 {
 }
 
 .data-text, .weather-text {
-    font-weight: bold;
+    /* font-weight: bold; */
     text-align: right;
     width: 50%;
+    font-weight: 400;
 }
 
 .data-value, .weather-value {
     text-align: left;
     width: 50%;
     margin-left: 10px;
+    font-weight: 200;
 }
 
 
