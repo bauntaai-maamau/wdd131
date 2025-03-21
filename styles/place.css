@@ -5,6 +5,10 @@
 }
 
 
+.big-box {
+    background-image: none;
+}
+
 header {
     max-width: 1200px;
     margin: auto;
@@ -42,8 +46,6 @@ h1 {
     object-fit: cover;
     object-position: center;
 }
-
-
 
 .data-box {
     margin: auto;

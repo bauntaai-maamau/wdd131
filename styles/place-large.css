@@ -1,36 +1,59 @@
-@media screen and (min-width: 46em) {
+@media screen and (min-width: 36em) {
     * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+    .hero {
+        display: none;
+    }
+
+    .big-box {
+        /* background-color: lightgrey; */
+        margin: auto;
+        max-width: 1200px;
+        min-height: 570px;
+        background-image: url('../images/country-2.webp');
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+    }
+
     .data-header {
-        background-color: bisque;
+        background-color: #FCD116;
         text-align: left;
         margin-right: 20px;
         margin-left: -10px;
-        padding: 5px 15px;
+        padding: 3px 10px;
     }
 
     .data-box {
-            width: 260px;
-            background-color: aqua;
-            box-sizing: border-box;
-        }
+        width: 210px;
+        background-color: #FFFFFF;
+        opacity: 0.8;
+        box-sizing: border-box;
+        position: absolute;
+        top: 50px;
+        left: 25px;
+    }
 
     .weather-box {
-        width: 260px;
-        background-color: aqua;
+        width: 200px;
+        background-color: #FFFFFF;
+        opacity: 0.8;
         box-sizing: border-box;
+        position: absolute;
+        bottom: 50px;
+        right: 25px;
     }
 
     .weather-header {
         display: flex;
         text-align: left;
         justify-content: space-between;
-        background-color: bisque;
-        padding: 5px 15px;
+        background-color: #FCD116;
+        padding: 3px 10px;
         padding-right: 30px;
         margin-right: 20px;
         margin-left: -10px;
@@ -39,13 +62,17 @@
     .weather-icon {
         width: 30px;
     }
+
+    footer {
+        padding: 5px;
+    }
        
 }
 
 
-@media screen and (min-width: 46em) {
+@media screen and (min-width: 36em) {
     .weather-icon {
-        content: url('Users/bauntaaimaamau/Documents/2025/BYU Pathway Worldwide/wdd131/wdd131/images/weather-emoticon.svg');
+        content: url('../images/weather-emoticon.svg');
         /* Change to a different icon for larger screens */
     }
 }
