@@ -1,0 +1,47 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+
+header {
+    max-width: 990px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #003F87; */
+    background-color: #FCD116;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+h1 {
+    background-color: #CE1126;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #CE1126;
+    color: #FFFFFF;;
+    text-align: center;
+    grid-column: 1 / 4;
+    margin: auto;
+    max-width: 990px;
+}
+
+footer p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
