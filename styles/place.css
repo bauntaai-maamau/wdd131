@@ -62,7 +62,6 @@ h1 {
 }
 
 .data-text, .weather-text {
-    /* font-weight: bold; */
     text-align: right;
     width: 50%;
     font-weight: 400;
@@ -72,7 +71,7 @@ h1 {
     text-align: left;
     width: 50%;
     margin-left: 10px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 

@@ -54,8 +54,6 @@
         opacity: 0.8;
         box-sizing: border-box;
         position: absolute;
-        font-family: "Poppins", sans-serif;
-        font-weight: 200;
     }
 
     .weather-icon {
