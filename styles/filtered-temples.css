@@ -136,6 +136,8 @@ h1.hidden {
     margin: 5px;
     border-radius: 5px;
     width: 70%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
 }
 
 
