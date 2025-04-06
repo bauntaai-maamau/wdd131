@@ -8,7 +8,11 @@ let aCourse = {
             enrolled: 95,
             instructor: "Roberto Diaz Rodriguez"
         },
-        { sectionNumber: "002", enrolled: 80, instructor: "Sarah Gobble" }
+        {
+            sectionNumber: "002",
+            enrolled: 80,
+            instructor: "Sarah Gobble"
+        }
     ]
 };
 
