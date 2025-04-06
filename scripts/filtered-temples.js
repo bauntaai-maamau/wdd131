@@ -122,6 +122,7 @@ homeLink.addEventListener("click", () => {
 
     // Add 'active' class to the clicked link
     homeLink.classList.add("active");
+    updatePageTitle("Home");
 
 
     // Display all temples (no filtering)
@@ -137,6 +138,7 @@ largeLink.addEventListener("click", () => {
 
     // Add 'active' class to the clicked link
     largeLink.classList.add("active");
+    updatePageTitle("Large Temples");
 
 
 
@@ -155,6 +157,7 @@ smallLink.addEventListener("click", () => {
 
     // Add 'active' class to the clicked link
     smallLink.classList.add("active");
+    updatePageTitle("Small Temples");
 
 
 
@@ -175,6 +178,7 @@ oldLink.addEventListener("click", () => {
 
     // Add 'active' class to the clicked link
     oldLink.classList.add("active");
+    updatePageTitle("Old Temples");
 
 
 
@@ -198,6 +202,7 @@ newLink.addEventListener("click", () => {
 
     // Add 'active' class to the clicked link
     newLink.classList.add("active");
+    updatePageTitle("New Temples");
 
 
 
@@ -224,6 +229,11 @@ function removeActiveClass() {
     });
 }
 
+// Update the <h2> content based on the active link
+function updatePageTitle(title) {
+    const h2 = document.querySelector("h2");
+    h2.textContent = title;
+}
 
 
 
@@ -263,12 +273,37 @@ homeLink.classList.add("active");
 
 
 const hamButton = document.querySelector('#menu');
+const header = document.querySelector('h1');
 const navigation = document.querySelector('.navigation');
 
 hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
+
     hamButton.classList.toggle('open');
+
+    navigation.classList.toggle('open');
+
+    header.classList.toggle('hidden');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

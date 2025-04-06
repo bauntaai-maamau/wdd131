@@ -12,13 +12,15 @@ header {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+    display: flex;
+    background-color: #96BBBB;
 }
 
 h1 {
-    background-color: #96BBBB;
     color: #414535;
     text-align: left;
     padding: 15px;
+    align-items: center;
 }
 
 h2 {
@@ -26,19 +28,49 @@ h2 {
     color: #414535;
 }
 
+
 #menu {
-    font-size: 1.5rem;
+    font-size: 2.9rem;
     border: 0;
     background: none;
     color: #000;
+    margin-left: auto;
+    padding-right: 60px;
+    
 }
+
+#menu.open {
+    font-size: 2.9rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: relative;
+    transform: translateY(-150%);
+}
+
 
 #menu::before {
     content: "☰";
 }
 
 #menu.open::before {
-    content: "❎";
+    /* content: "❎"; */
+    content: "X";
+    font-size: 2.0rem;
+    
+}
+
+
+
+
+.hidden {
+    display: none;
+}
+
+
+h1.hidden {
+    display: block;
+    visibility: hidden;
 }
 
 .navigation {
@@ -47,13 +79,13 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
-    background-color: #F2E3BC;
+    background-color: #96BBBB;
 }
 
 .navigation a {
     color: black;
     text-decoration: none;
-    font-size: large;
+    font-size: x-large;
     display: block;
     width: 100%;
     transition: background-color 0.3s;
@@ -62,8 +94,8 @@ h2 {
 
 .navigation a:hover {
     text-decoration: none;
-    color: white;
-    background-color: #A24857;
+    color: #414535;
+    background-color: wheat;
 }
 
 .navigation.open {
@@ -79,7 +111,7 @@ h2 {
 /* Style for the active link */
 .navigation li a.active {
     font-weight: bold;
-    color: #CEA335;
+    color: orangered;
 }
 
 
@@ -128,3 +160,20 @@ footer p {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
