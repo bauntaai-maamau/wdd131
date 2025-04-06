@@ -12,6 +12,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -89,23 +90,14 @@ figcaption {
 }
 
 footer {
-    background: #F2E3BC;
+    background: #96BBBB;
     color: #414535;
     text-align: center;
     grid-column: 1 / 4;
     padding: 0.2rem;
     margin: auto;
     max-width: 990px;
-}
-
-footer {
-    background-color: #96BBBB;
-    color: #414535;
-    text-align: center;
-    grid-column: 1 / 4;
-    padding: 0.2rem;
-    margin: auto;
-    max-width: 990px;
+    box-sizing: border-box;
 }
 
 footer p {

@@ -12,6 +12,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -106,6 +107,7 @@ footer {
     padding: 0.2rem;
     margin: auto;
     max-width: 990px;
+    box-sizing: border-box;
 }
 
 footer p {
