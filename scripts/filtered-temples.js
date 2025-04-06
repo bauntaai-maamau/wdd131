@@ -117,6 +117,13 @@ createTempleCard(temples);
 const homeLink = document.querySelector("#homeLink");
 // When the Home link is clicked, show all temples
 homeLink.addEventListener("click", () => {
+    // Remove 'active' class from all links
+    removeActiveClass();
+
+    // Add 'active' class to the clicked link
+    homeLink.classList.add("active");
+
+
     // Display all temples (no filtering)
     createTempleCard(temples);
 });
@@ -125,6 +132,14 @@ homeLink.addEventListener("click", () => {
 // Reference to the "Large" link
 const largeLink = document.querySelector("#largeLink");
 largeLink.addEventListener("click", () => {
+    // Remove 'active' class from all links
+    removeActiveClass();
+
+    // Add 'active' class to the clicked link
+    largeLink.classList.add("active");
+
+
+
     // Filter temples that have an area greater than 90,000 sq ft
     const largeTemples = temples.filter(temple => temple.area > 90000);
     createTempleCard(largeTemples); // Display large temples
@@ -135,6 +150,14 @@ largeLink.addEventListener("click", () => {
 // Reference to the "Small" link
 const smallLink = document.querySelector("#smallLink");
 smallLink.addEventListener("click", () => {
+    // Remove 'active' class from all links
+    removeActiveClass();
+
+    // Add 'active' class to the clicked link
+    smallLink.classList.add("active");
+
+
+
     // Filter temples that have an area less than 10,000 sq ft
     const smallTemples = temples.filter(temple => temple.area < 10000);
     createTempleCard(smallTemples); // Display small temples
@@ -147,6 +170,14 @@ smallLink.addEventListener("click", () => {
 const oldLink = document.querySelector("#oldLink");
 // When the "Old" link is clicked, filter and display temples dedicated before 1990
 oldLink.addEventListener("click", () => {
+    // Remove 'active' class from all links
+    removeActiveClass();
+
+    // Add 'active' class to the clicked link
+    oldLink.classList.add("active");
+
+
+
     const oldTemples = temples.filter(temple => {
         const yearDedicated = parseInt(temple.dedicated.split(",")[0]);
         return yearDedicated < 1900;
@@ -162,6 +193,14 @@ oldLink.addEventListener("click", () => {
 const newLink = document.querySelector("#newLink");
 // When the "New" link is clicked, filter and display temples dedicated after 2000
 newLink.addEventListener("click", () => {
+    // Remove 'active' class from all links
+    removeActiveClass();
+
+    // Add 'active' class to the clicked link
+    newLink.classList.add("active");
+
+
+
     const newTemples = temples.filter(temple => {
         const yearDedicated = parseInt(temple.dedicated.split(",")[0]);
         return yearDedicated > 2000;
@@ -169,6 +208,22 @@ newLink.addEventListener("click", () => {
     // Display new temples 
     createTempleCard(newTemples);
 });
+
+
+
+
+
+// Function to remove 'active' class from all links
+function removeActiveClass() {
+    // Get all the links
+    const links = document.querySelectorAll('.navigation a');
+
+    // Remove the 'active' class from each link
+    links.forEach(link => {
+        link.classList.remove('active');
+    });
+}
+
 
 
 
@@ -202,6 +257,9 @@ function createTempleCard(filteredTemples) {
     });
 }
 
+// Initialize by marking the Home link as active by default
+homeLink.classList.add("active");
+
 
 
 const hamButton = document.querySelector('#menu');
@@ -211,6 +269,23 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -75,6 +75,15 @@ h2 {
     content: "📍";
 }
 
+
+/* Style for the active link */
+.navigation li a.active {
+    font-weight: bold;
+    color: #CEA335;
+}
+
+
+
 .container {
     margin: 0 auto;
     max-width: 1200px;
