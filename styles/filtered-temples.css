@@ -11,7 +11,6 @@ header {
     margin: auto;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -19,12 +18,12 @@ h1 {
     background-color: #96BBBB;
     color: #414535;
     text-align: left;
+    padding: 15px;
 }
 
 h2 {
     text-align: center;
     color: #414535;
-    background-color: #96BBBB;
 }
 
 #menu {
@@ -77,8 +76,8 @@ h2 {
 }
 
 .container {
-    margin: auto;
-    max-width: 990px;
+    margin: 0 auto;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -86,8 +85,17 @@ h2 {
     box-sizing: border-box;
 }
 
+
 .container img {
-    width: 400px;
+    width: 350px;
+}
+
+.container section {
+    background: lightgray;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 70%;
 }
 
 figcaption {
@@ -104,6 +112,7 @@ footer {
     margin: auto;
     width: 100%;
     box-sizing: border-box;
+    margin-top: 25px;
 }
 
 footer p {

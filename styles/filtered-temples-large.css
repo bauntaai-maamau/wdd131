@@ -1,4 +1,4 @@
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 39em) {
     header {
         color: #414535;
         background: #F2E3BC;
@@ -16,6 +16,7 @@
     h2 {
         color: #618985;
         background-color: transparent;
+        padding: 0px;
     }
 
     .navigation {
@@ -41,11 +42,17 @@
 
     .container {
         grid-template-columns: repeat(auto-fill, minmax(310px, 2fr));
+        max-width: 930px;
     }
 
     .container img {
-        width: 300px;
+        width: 200px;
     }
+
+    .container section {
+        width: 80%;
+    }
+
 
     footer {
         background: #F2E3BC;

@@ -109,10 +109,74 @@ const temples = [
     // Add more temple objects here...
 ];
 
-createTempleCard();
+createTempleCard(temples);
 
-function createTempleCard() {
-    temples.forEach(temple => {
+
+
+// Reference to the "Home" link
+const homeLink = document.querySelector("#homeLink");
+// When the Home link is clicked, show all temples
+homeLink.addEventListener("click", () => {
+    // Display all temples (no filtering)
+    createTempleCard(temples);
+});
+
+
+// Reference to the "Large" link
+const largeLink = document.querySelector("#largeLink");
+largeLink.addEventListener("click", () => {
+    // Filter temples that have an area greater than 90,000 sq ft
+    const largeTemples = temples.filter(temple => temple.area > 90000);
+    createTempleCard(largeTemples); // Display large temples
+});
+
+
+
+// Reference to the "Small" link
+const smallLink = document.querySelector("#smallLink");
+smallLink.addEventListener("click", () => {
+    // Filter temples that have an area less than 10,000 sq ft
+    const smallTemples = temples.filter(temple => temple.area < 10000);
+    createTempleCard(smallTemples); // Display small temples
+});
+
+
+
+
+// Reference to the "Old" link
+const oldLink = document.querySelector("#oldLink");
+// When the "Old" link is clicked, filter and display temples dedicated before 1990
+oldLink.addEventListener("click", () => {
+    const oldTemples = temples.filter(temple => {
+        const yearDedicated = parseInt(temple.dedicated.split(",")[0]);
+        return yearDedicated < 1900;
+    });
+    // Display old temples 
+    createTempleCard(oldTemples);
+});
+
+
+
+
+// Reference to the "New" link
+const newLink = document.querySelector("#newLink");
+// When the "New" link is clicked, filter and display temples dedicated after 2000
+newLink.addEventListener("click", () => {
+    const newTemples = temples.filter(temple => {
+        const yearDedicated = parseInt(temple.dedicated.split(",")[0]);
+        return yearDedicated > 2000;
+    });
+    // Display new temples 
+    createTempleCard(newTemples);
+});
+
+
+
+
+
+function createTempleCard(filteredTemples) {
+    document.querySelector(".container").innerHTML = "";
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
@@ -123,7 +187,7 @@ function createTempleCard() {
         name.textContent = temple.templeName;
         location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
         dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-        area.innerHTML = `<span>Size:</span> ${temple.area} sq ft`;
+        area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
         img.setAttribute("src", temple.imageUrl );
         img.setAttribute("alt", `${temple.templeName} Temple` );
         img.setAttribute("loading", "lazy");
@@ -147,3 +211,34 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
