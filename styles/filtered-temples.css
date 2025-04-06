@@ -82,6 +82,12 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container img {
+    width: 200px;
 }
 
 figcaption {
