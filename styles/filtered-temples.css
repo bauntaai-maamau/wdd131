@@ -127,7 +127,7 @@ h1.hidden {
 
 
 .container img {
-    width: 350px;
+    width: 200px;
 }
 
 .container section {
@@ -135,7 +135,7 @@ h1.hidden {
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
-    width: 70%;
+    width: 50%;
     font-family: "Roboto", sans-serif;
     font-weight: 200;
 }
