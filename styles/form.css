@@ -10,6 +10,7 @@
 header, main, footer {
     margin: 10px 30px;
     padding: 10px 0;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -94,8 +95,6 @@ label, legend {
     height: 35px;
     font-size: 1.0em;
     appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     border-radius: 0;
     border: none;
 }
