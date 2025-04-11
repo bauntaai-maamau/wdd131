@@ -1,3 +1,144 @@
-body {
-    background: red;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    max-width: 750px;
+    min-width: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header, main, footer {
+    margin: 10px 30px;
+    padding: 10px 0;
+}
+
+
+.template {
+    margin: 25px 0 25px 0;
+}
+
+
+label, input {
+    margin: 5px 0;
+}
+
+
+
+
+header, footer {
+    background: #C1BAA1;
+    color: white;
+}
+
+main {
+    background: #ECEBDE;
+}
+
+
+
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    
+}
+
+.star {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.star label {
+    font-size: 1em;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.star input {
+    cursor: pointer;
+    transform: scale(1.7);
+    margin: 10px 0;
+}
+
+.star:has(input:checked) label {
+    color: gold;
+}
+
+
+
+
+textarea {
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+}
+
+
+
+
+label, legend {
+    font-size: 1.1em;
+    display: block;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.typing-box {
+    text-align: left;
+    width: 90%;
+    height: 35px;
+    font-size: 1.0em;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    border: none;
+}
+
+.optional {
+    color: blue;
+}
+
+
+
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 0px;
+    transform: scale(1.7);
+    margin-left: 5%;
+}
+
+.template legend {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
+
+.submit-btn {
+    font-size: 1.3em;
+    padding: 12px 24px;
+    background: #D4D4D4;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 90%;
+    border: 1px solid lightgrey;
+}
+
+.submit-btn:hover {
+    background-color: #cdcdcd;
 }

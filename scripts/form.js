@@ -3,3 +3,5 @@ document.getElementById("copyright").textContent = `©${currentYear} 🌴 Baunta
 
 const lastModified = document.lastModified;
 document.getElementById("last-modified").textContent = `Last modification: ${lastModified}`;
+
+

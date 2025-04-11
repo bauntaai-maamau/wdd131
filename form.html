@@ -21,10 +21,116 @@
 
 <body>
     <header>
-        
+        <h1>Product Review</h1>
     </header>
     <main>
+        <form method="get" action="review.html">
+
+            <!-- Product Select -->
+            <div class="template">
+                <label for="product">Product Name</label>
+                <select class="typing-box" id="product" name="product" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                    <option value="Windows 12">Windows 12</option>
+                    <option value="AntiVirus">AntiVirus</option>
+                    <option value="TV">TV</option>
+                    <option value="Windows Screen">Windows Screen</option>
+                </select>
+            </div>
+            
         
+            <!-- Overall Rating -->
+            <div class="template">
+                <label>Overall Rating</label>
+                <div class="stars">
+                    <div class="star">
+                        <label for="star1">&#9733;</label>
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                    </div>
+                    <div class="star">
+                        <label for="star2">&#9733;&#9733;</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                    </div>
+                    <div class="star">
+                        <label for="star3">&#9733;&#9733;&#9733;</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                    </div>
+                    <div class="star">
+                        <label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                    </div>
+                    <div class="star">
+                        <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                        <input type="radio" id="star5" name="rating" value="5">
+                    </div>
+                </div>
+            </div>
+            
+            
+
+        
+            <!-- Date of Installation -->
+            <div class="template">
+                <label for="install-date">Date of Installation:</label>
+                <input type="date" id="install-date" name="install-date" required class="typing-box">
+            </div>
+            
+
+            <!-- Useful Features -->
+            <div class="template">
+                <legend>
+                    Which feature did you find useful in the product? <br>
+                    <i>(check all that apply)</i>
+                </legend>
+            
+                <div class="checkbox-item">
+                    <input type="checkbox" id="feature1" name="features" value="Easy to Use">
+                    <label for="feature1">Easy to Use</label>
+                </div>
+            
+                <div class="checkbox-item">
+                    <input type="checkbox" id="feature2" name="features" value="Durable">
+                    <label for="feature2">Durable</label>
+                </div>
+            
+                <div class="checkbox-item">
+                    <input type="checkbox" id="feature3" name="features" value="Energy Efficient">
+                    <label for="feature3">Energy Efficient</label>
+                </div>
+            
+                <div class="checkbox-item">
+                    <input type="checkbox" id="feature4" name="features" value="Affordable">
+                    <label for="feature4">Affordable</label>
+                </div>
+            </div>
+
+        
+
+            <!-- Written Review -->
+             <div class="template">
+                <label for="review">
+                    Written Review <span class="optional">(Optional)</span>
+                </label>
+                <textarea id="review" name="review" rows="4" cols="50" class="typing-box"></textarea>
+             </div>
+            
+        
+            <!-- User Name -->
+            <div class="template">
+                <label for="username">
+                    Your Name <span class="optional">(Optional)</span>
+                </label>
+                <input type="text" id="username" name="username" class="typing-box">
+            </div>
+            
+
+        
+            <!-- Submit Button -->
+            <div class="template">
+                <input type="submit" value="Post Review" class="submit-btn">
+            </div>
+            
+        </form>
     </main>
     <footer>
         <p id="copyright"></p>
@@ -33,3 +139,17 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
