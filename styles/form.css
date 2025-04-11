@@ -28,7 +28,7 @@ label, input {
 header, footer {
     background: #C1BAA1;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Roboto", sans-serif;
 }
 
 main {
