@@ -10,7 +10,6 @@
 header, main, footer {
     margin: 10px 30px;
     padding: 10px 0;
-    font-family: "Poppins", sans-serif;
 }
 
 
@@ -29,10 +28,12 @@ label, input {
 header, footer {
     background: #C1BAA1;
     color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 main {
     background: #ECEBDE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
