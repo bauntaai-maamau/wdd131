@@ -50,7 +50,7 @@ legend {
 .typing-box {
     text-align: left;
     width: 90%;
-    height: 35px;
+    height: 40px;
     font-size: 1em;
     appearance: none;
     border: none;
@@ -158,5 +158,5 @@ textarea {
     .star {
         flex: 0 0 auto;
     }
-    
+
 }
