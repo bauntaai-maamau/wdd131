@@ -123,7 +123,7 @@ textarea {
 }
 
 .star:has(input:checked) label {
-    color: gold;
+    color: maroon;
 }
 
 .submit-btn {
