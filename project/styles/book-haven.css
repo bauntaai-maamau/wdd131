@@ -15,6 +15,21 @@ header {
     display: flex;
 }
 
+
+header.open {
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 main {
     background: #ECEBDE;
     padding: 10px 0 30px 0;
