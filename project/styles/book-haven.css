@@ -1,0 +1,170 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    display: flex;
+}
+
+main {
+    background: #ECEBDE;
+    padding: 10px 0 30px 0;
+}
+
+h1 {
+    color: #CD853F;
+    text-align: left;
+    padding: 15px;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    color: #414535;
+}
+
+
+#menu {
+    font-size: 2.9rem;
+    border: 0;
+    background: none;
+    color: #000;
+    margin-left: auto;
+    padding-right: 60px;
+
+}
+
+#menu.open {
+    font-size: 2.0rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: relative;
+    transform: translateY(-130%);
+}
+
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    /* content: "❎"; */
+    content: "X";
+    font-size: 2.0rem;
+
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+h1.hidden {
+    display: block;
+    visibility: hidden;
+}
+
+.navigation {
+    display: none;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    /* background-color: #96BBBB; */
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none;
+    font-size: x-large;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.navigation a:hover {
+    text-decoration: none;
+    color: #414535;
+    background-color: wheat;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.active::before {
+    content: "📍";
+}
+
+
+/* Style for the active link */
+.navigation li a.active {
+    font-weight: bold;
+    color: orangered;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.container img {
+    width: 200px;
+}
+
+.container section {
+    background: lightgray;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 50%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+}
+
+
+
+figcaption {
+    text-align: center;
+    color: #414535;
+}
+
+footer {
+    background: #ECEBDE;
+    color: black;
+    text-align: center;
+    grid-column: 1 / 4;
+    padding: 0.2rem;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    /* margin-top: 25px; */
+    border-top: 1px solid lightgray;
+}
+
+footer p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
