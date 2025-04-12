@@ -127,9 +127,7 @@ h1.hidden {
     justify-items: center;
     text-align: center;
     box-sizing: border-box;
-    padding: 0 10px;
 } */
-
 
 
 
@@ -183,12 +181,15 @@ h1.hidden {
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
-    width: 100%;
+    width: 50%;
+    min-width: 210px;
     max-width: 220px;
     font-family: "Roboto", sans-serif;
     font-weight: 200;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
+
+
 
 
 
