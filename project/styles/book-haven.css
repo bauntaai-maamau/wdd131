@@ -15,21 +15,6 @@ header {
     display: flex;
 }
 
-
-header.open {
-    justify-content: center;
-}
-
-
-
-
-
-
-
-
-
-
-
 main {
     background: #ECEBDE;
     padding: 10px 0 30px 0;
@@ -77,7 +62,6 @@ h2 {
 }
 
 #menu.open::before {
-    /* content: "❎"; */
     content: "X";
     font-size: 2.0rem;
 
@@ -104,7 +88,6 @@ h1.hidden {
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
-    /* background-color: #96BBBB; */
 }
 
 .navigation a {
@@ -126,9 +109,9 @@ h1.hidden {
 .navigation.open {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
+
+
 
 
 .active::before {
@@ -136,7 +119,6 @@ h1.hidden {
 }
 
 
-/* Style for the active link */
 .navigation li a.active {
     font-weight: bold;
     color: orangered;
@@ -211,7 +193,6 @@ footer {
     margin: auto;
     width: 100%;
     box-sizing: border-box;
-    /* margin-top: 25px; */
     border-top: 1px solid lightgray;
 }
 
@@ -219,3 +200,16 @@ footer p {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
