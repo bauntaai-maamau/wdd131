@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Haven Project</title>
+    <title>ReadiVerse Hub</title>
     <script src="scripts/readiverse-hub.js" defer></script>
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Bauntaai Maamau. Book Haven Project.">
     <meta name="author" content="Bauntaai Maamau">
@@ -15,139 +15,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/contact-us.css">
     <link rel="stylesheet" href="styles/readiverse-hub.css">
     <link rel="stylesheet" href="styles/readiverse-hub-large.css">
 </head>
 
 <body>
     <header>
-        <h1>Book Haven</h1>
-        <nav>
-            <ul class="navigation">
-                <li><a href="readiverse-hub.html" title="Home">Home</a></li>
+        <button id="menu"></button>
+        <h1>ReadiVerse Hub</h1>
+        <nav id="navigation" class="navigation">
+            <ul>
+                <li><a href="readiverse-hub.html" title="Home" id="homeLink">Home</a></li>
                 <li class="home-only"><a href="#old" title="Old" id="oldLink">Old</a></li>
                 <li class="home-only"><a href="#new" title="New" id="newLink">New</a></li>
-                <li><a href="recommend.html" title="New" id="recommendLink">Recommend</a></li>
-                <li><a href="contact-us.html" title="New" id="contactLink">Contact Us</a></li>
+                <li><a href="#recommend" title="New" id="recommendLink">Recommend</a></li>
+                <li><a href="#" title="New" id="contactLink">Contact Us</a></li>
             </ul>
         </nav>
-        <button id="menu"></button>
     </header>
     <main>
         <h2>Home</h2>
-        <!-- <div class="container">
-        
-        </div> -->
+        <div class="container">
+            
+        </div>
         <div class="contact">
-            <form method="get" action="review.html">
-            
-                <!-- Product Select -->
-                <div class="template">
-                    <label for="product">Product Name</label>
-                    <select class="typing-box" id="product" name="product" required>
-                        <option value="" disabled selected>Choose a Product ...</option>
-                        <option value="Windows 12">Windows 12</option>
-                        <option value="AntiVirus">AntiVirus</option>
-                        <option value="TV">TV</option>
-                        <option value="Windows Screen">Windows Screen</option>
-                    </select>
-                </div>
-            
-            
-                <!-- Overall Rating -->
-                <div class="template">
-                    <label>Overall Rating</label>
-                    <div class="stars">
-                        <div class="star">
-                            <label for="star1">&#9733;</label>
-                            <input type="radio" id="star1" name="rating" value="1" required>
-                        </div>
-                        <div class="star">
-                            <label for="star2">&#9733;&#9733;</label>
-                            <input type="radio" id="star2" name="rating" value="2">
-                        </div>
-                        <div class="star">
-                            <label for="star3">&#9733;&#9733;&#9733;</label>
-                            <input type="radio" id="star3" name="rating" value="3">
-                        </div>
-                        <div class="star">
-                            <label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
-                            <input type="radio" id="star4" name="rating" value="4">
-                        </div>
-                        <div class="star">
-                            <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
-                            <input type="radio" id="star5" name="rating" value="5">
-                        </div>
-                    </div>
-                </div>
-            
-            
-            
-            
-                <!-- Date of Installation -->
-                <div class="template">
-                    <label for="install-date">Date of Installation:</label>
-                    <input type="date" id="install-date" name="install-date" required class="typing-box">
-                </div>
-            
-            
-            
-                <!-- Useful Features -->
-                <div class="template">
-                    <label>
-                        Which feature did you find useful in the product? <br>
-                        <i>(check all that apply)</i>
-                    </label>
-            
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="feature1" name="features" value="Easy to Use">
-                        <label for="feature1">Easy to Use</label>
-                    </div>
-            
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="feature2" name="features" value="Durable">
-                        <label for="feature2">Durable</label>
-                    </div>
-            
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="feature3" name="features" value="Energy Efficient">
-                        <label for="feature3">Energy Efficient</label>
-                    </div>
-            
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="feature4" name="features" value="Affordable">
-                        <label for="feature4">Affordable</label>
-                    </div>
-                </div>
-            
-            
-            
-                <!-- Written Review -->
-                <div class="template">
-                    <label for="review">
-                        Written Review <span class="optional">(Optional)</span>
-                    </label>
-                    <textarea id="review" name="review" rows="4" cols="50" class="typing-box"></textarea>
-                </div>
-            
-            
-                <!-- User Name -->
+            <form action="thank-you.html" method="post">
                 <div class="template">
                     <label for="username">
-                        Your Name <span class="optional">(Optional)</span>
+                        Full Name
                     </label>
-                    <input type="text" id="username" name="username" class="typing-box">
+                    <input type="text" id="username" name="username" class="typing-box" required>
                 </div>
             
-            
-            
-                <!-- Submit Button -->
                 <div class="template">
-                    <input type="submit" value="Post Review" class="submit-btn">
+                    <label for="email">
+                        Email Address
+                    </label>
+                    <input type="email" id="email" name="email" class="typing-box" required>
+                </div>
+            
+                <div class="template">
+                    <label for="subject">
+                        Subject
+                    </label>
+                    <input type="text" id="subject" name="subject" class="typing-box" required>
+                </div>
+            
+                <div class="template">
+                    <label for="review">
+                        Message
+                    </label>
+                    <textarea id="review" name="review" rows="4" class="typing-box" required></textarea>
+                </div>
+            
+                <div class="template">
+                    <label for="phone">
+                        Phone Number <span class="optional">(Optional)</span>
+                    </label>
+                    <input type="tel" id="phone" name="phone" class="typing-box">
+                </div>
+            
+                <div class="template">
+                    <input type="submit" value="Send Message" class="submit-btn">
                 </div>
             </form>
-
         </div>
     </main>
     <footer>
@@ -157,3 +88,18 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

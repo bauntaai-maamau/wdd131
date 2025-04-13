@@ -30,6 +30,8 @@ footer {
     padding: 10px 0;
 }
 
+
+
 .template {
     margin: 25px 0;
 }
@@ -84,6 +86,23 @@ textarea {
     margin-bottom: 10px;
 }
 
+.submit-btn {
+    font-size: 1.3em;
+    padding: 12px 24px;
+    background: #D4D4D4;
+    color: black;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.submit-btn:hover {
+    background-color: #cdcdcd;
+}
+
+
+
 .stars {
     display: flex;
     justify-content: space-evenly;
@@ -92,14 +111,6 @@ textarea {
     width: 90%;
     margin-left: 5%;
 }
-
-
-
-
-
-
-
-
 
 
 .star {
@@ -126,20 +137,9 @@ textarea {
     color: maroon;
 }
 
-.submit-btn {
-    font-size: 1.3em;
-    padding: 12px 24px;
-    background: #D4D4D4;
-    color: black;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    cursor: pointer;
-    width: 90%;
-}
 
-.submit-btn:hover {
-    background-color: #cdcdcd;
-}
+
+
 
 
 
