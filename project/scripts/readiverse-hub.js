@@ -94,100 +94,6 @@ const books = [
 
 createBookCard(books);
 
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    if (window.location.pathname.includes("contact-us")) {
-        renderContactForm();  
-    } else {
-        createBookCard(books);  
-    }
-
-    
-    // const homeLink = document.querySelector("#homeLink");
-    // const oldLink = document.querySelector("#oldLink");
-    // const newLink = document.querySelector("#newLink");
-    // const recommendLink = document.querySelector("#recommendLink");
-    // const contactLink = document.querySelector("#contactLink");
-
-   
-    // homeLink.addEventListener("click", () => {
-    //     removeActiveClass();
-    //     homeLink.classList.add("active");
-    //     updatePageTitle("Home");
-    //     createBookCard(books);  
-    // });
-
-    
-    // oldLink.addEventListener("click", () => {
-    //     removeActiveClass();
-    //     oldLink.classList.add("active");
-    //     updatePageTitle("Old Books");
-
-    //     const oldBooks = books.filter(book => {
-    //         const yearPublished = parseInt(book.published.split(",")[0]);
-    //         return yearPublished < 1950;
-    //     });
-    //     createBookCard(oldBooks);  
-    // });
-
-   
-    // newLink.addEventListener("click", () => {
-    //     removeActiveClass();
-    //     newLink.classList.add("active");
-    //     updatePageTitle("New Books");
-
-    //     const newBooks = books.filter(book => {
-    //         const yearPublished = parseInt(book.published.split(",")[0]);
-    //         return yearPublished > 2000;
-    //     });
-    //     createBookCard(newBooks);  
-    // });
-
-    
-    // recommendLink.addEventListener("click", () => {
-    //     removeActiveClass();
-    //     recommendLink.classList.add("active");
-    //     updatePageTitle("Recommended");
-
-    //     const recommendedBooks = books.filter(b => b.recommended);
-    //     createBookCard(recommendedBooks);  
-    // });
-
-   
-    // contactLink.addEventListener("click", () => {
-    //     removeActiveClass();
-    //     contactLink.classList.add("active");
-    //     updatePageTitle("Contact Us");
-
-       
-    //     document.querySelector(".container").innerHTML = "";
-    //     renderContactForm();  
-    // });
-});
-
-
-function renderContactForm() {
-    const container = document.querySelector(".container");
-    container.innerHTML = ``;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Navigation 
 const homeLink = document.querySelector("#homeLink");
 homeLink.addEventListener("click", () => {
@@ -258,18 +164,11 @@ function removeActiveClass() {
     links.forEach(link => link.classList.remove('active'));
 }
 
-
-
-
 // Update page title
 function updatePageTitle(title) {
     const h2 = document.querySelector("h2");
     h2.textContent = title;
 }
-
-
-
-
 
 // Create book cards
 function createBookCard(filteredBooks) {
@@ -313,54 +212,3 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     header.classList.toggle('hidden');
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

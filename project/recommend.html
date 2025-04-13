@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Haven Project</title>
-    <script src="scripts/contact-us.js" defer></script>
+    <title>ReadiVerse Hub</title>
+    <script src="scripts/readiverse-hub.js" defer></script>
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Bauntaai Maamau. Book Haven Project.">
     <meta name="author" content="Bauntaai Maamau">
 
@@ -15,28 +15,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/contact-us.css">
-    <link rel="stylesheet" href="styles/contact-us-large.css">
+    <link rel="stylesheet" href="styles/readiverse-hub.css">
+    <link rel="stylesheet" href="styles/readiverse-hub-large.css">
 </head>
 
 <body>
     <header>
-        <h1>Book Haven</h1>
-        <nav>
-            <ul class="navigation">
-                <li><a href="book-haven.html" title="Home">Home</a></li>
+        <button id="menu"></button>
+        <h1>ReadiVerse Hub</h1>
+        <nav id="navigation" class="navigation">
+            <ul>
+                <li><a href="readiverse-hub.html" title="Home" id="homeLink">Home</a></li>
                 <li class="home-only"><a href="#old" title="Old" id="oldLink">Old</a></li>
                 <li class="home-only"><a href="#new" title="New" id="newLink">New</a></li>
-                <li><a href="#recommend" title="New" id="recommendLink">Recommend</a></li>
+                <li><a href="#" title="New" id="bookRecommendLink">Book Recommendation</a></li>
                 <li><a href="contact-us.html" title="New" id="contactLink">Contact Us</a></li>
             </ul>
         </nav>
-        <button id="menu"></button>
     </header>
     <main>
         <h2>Home</h2>
         <div class="container">
 
+        </div>
+        <div class="contact">
+            <form action="thank-you.html" method="post">
+                <div class="template">
+                    <label for="username">
+                        Full Name
+                    </label>
+                    <input type="text" id="username" name="username" class="typing-box" required>
+                </div>
+            
+                <div class="template">
+                    <label for="email">
+                        Email Address
+                    </label>
+                    <input type="email" id="email" name="email" class="typing-box" required>
+                </div>
+            
+                <div class="template">
+                    <label for="subject">
+                        Subject
+                    </label>
+                    <input type="text" id="subject" name="subject" class="typing-box" required>
+                </div>
+            
+                <div class="template">
+                    <label for="review">
+                        Message
+                    </label>
+                    <textarea id="review" name="review" rows="4" class="typing-box" required></textarea>
+                </div>
+            
+                <div class="template">
+                    <label for="phone">
+                        Phone Number <span class="optional">(Optional)</span>
+                    </label>
+                    <input type="tel" id="phone" name="phone" class="typing-box">
+                </div>
+            
+                <div class="template">
+                    <input type="submit" value="Send Message" class="submit-btn">
+                </div>
+            </form>
         </div>
     </main>
     <footer>
@@ -46,3 +88,10 @@
 </body>
 
 </html>
+
+
+
+
+
+
+

@@ -207,7 +207,7 @@ footer p {
 /* Contact Form Style */
 .contact {
     max-width: 400px;
-    min-width: 220px;
+    min-width: 170px;
     margin: 0 auto;
     text-align: center;
     background-color: #D7D3BF;
@@ -272,7 +272,7 @@ textarea {
     font-size: 1.3em;
     padding: 12px 24px;
     background: darkgray;
-    color: black;
+    color: maroon;
     border: 1px solid lightgrey;
     border-radius: 6px;
     cursor: pointer;
