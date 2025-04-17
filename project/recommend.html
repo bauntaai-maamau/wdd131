@@ -39,44 +39,116 @@
 
         </div>
         <div class="contact">
-            <form action="thank-you.html" method="post">
+            <form method="get" action="book-review.html">
+            
+                <!-- Book Title -->
                 <div class="template">
-                    <label for="username">
-                        Full Name
-                    </label>
-                    <input type="text" id="username" name="username" class="typing-box" required>
+                    <label for="book-title">Book Title</label>
+                    <input type="text" id="book-title" name="book-title" class="typing-box" required>
                 </div>
             
+                <!-- Author -->
                 <div class="template">
-                    <label for="email">
-                        Email Address
-                    </label>
-                    <input type="email" id="email" name="email" class="typing-box" required>
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" class="typing-box" required>
                 </div>
             
+                <!-- Genre Select -->
                 <div class="template">
-                    <label for="subject">
-                        Subject
-                    </label>
-                    <input type="text" id="subject" name="subject" class="typing-box" required>
+                    <label for="genre">Genre</label>
+                    <select class="typing-box" id="genre" name="genre" required>
+                        <option value="" disabled selected>Choose a Genre...</option>
+                        <option value="Fiction">Fiction</option>
+                        <option value="Non-Fiction">Non-Fiction</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Biography">Biography</option>
+                        <option value="Self-Help">Self-Help</option>
+                        <option value="Other">Other</option>
+                    </select>
                 </div>
             
+                <!-- Overall Rating -->
+                <div class="template">
+                    <label>Overall Rating</label>
+                    <div class="stars">
+                        <div class="star">
+                            <label for="star1">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1" required>
+                        </div>
+                        <div class="star">
+                            <label for="star2">&#9733;&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                        </div>
+                        <div class="star">
+                            <label for="star3">&#9733;&#9733;&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                        </div>
+                        <div class="star">
+                            <label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                        </div>
+                        <div class="star">
+                            <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                            <input type="radio" id="star5" name="rating" value="5">
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Date Read -->
+                <div class="template">
+                    <label for="read-date">Date You Finished the Book:</label>
+                    <input type="date" id="read-date" name="read-date" required class="typing-box">
+                </div>
+            
+                <!-- Highlights -->
+                <div class="template">
+                    <label>
+                        What did you like about the book? <br>
+                        <i>(check all that apply)</i>
+                    </label>
+            
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="highlight1" name="highlights" value="Well-Written">
+                        <label for="highlight1">Well-Written</label>
+                    </div>
+            
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="highlight2" name="highlights" value="Interesting Characters">
+                        <label for="highlight2">Interesting Characters</label>
+                    </div>
+            
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="highlight3" name="highlights" value="Engaging Plot">
+                        <label for="highlight3">Engaging Plot</label>
+                    </div>
+            
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="highlight4" name="highlights" value="Thought-Provoking">
+                        <label for="highlight4">Thought-Provoking</label>
+                    </div>
+                </div>
+            
+                <!-- Written Recommendation -->
                 <div class="template">
                     <label for="review">
-                        Message
+                        Why do you recommend this book? <span class="optional">(Optional)</span>
                     </label>
-                    <textarea id="review" name="review" rows="4" class="typing-box" required></textarea>
+                    <textarea id="review" name="review" rows="4" cols="50" class="typing-box"></textarea>
                 </div>
             
+                <!-- User Name -->
                 <div class="template">
-                    <label for="phone">
-                        Phone Number <span class="optional">(Optional)</span>
+                    <label for="username">
+                        Your Name <span class="optional">(Optional)</span>
                     </label>
-                    <input type="tel" id="phone" name="phone" class="typing-box">
+                    <input type="text" id="username" name="username" class="typing-box">
                 </div>
             
+                <!-- Submit Button -->
                 <div class="template">
-                    <input type="submit" value="Send Message" class="submit-btn">
+                    <input type="submit" value="Submit Recommendation" class="submit-btn">
                 </div>
             </form>
         </div>

@@ -1,4 +1,4 @@
-@media screen and (min-width: 39em) {
+@media screen and (min-width: 44em) {
     header {
         padding: 20px;
         justify-content: space-between;
@@ -55,6 +55,7 @@
         justify-items: center;
     }
 
+    
 }
 
 
@@ -74,4 +75,21 @@
     .navigation a {
         font-size: x-large;
     }
+
+    /* Recommendation Form Style */
+    .stars {
+        flex-direction: column;
+        justify-content: left;
+        gap: 10px;
+        align-items: center;
+
+    }
+
+    .star {
+        flex: 0 0 auto;
+    }
+
 }
+
+
+

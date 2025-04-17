@@ -283,8 +283,40 @@ textarea {
     background-color: lightsteelblue;
 }
 
+/* Recommendation Form Style */
+.stars {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
 
 
+.star {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.star label {
+    font-size: 1em;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.star input {
+    cursor: pointer;
+    transform: scale(1.7);
+    margin: 10px 0;
+}
+
+.star:has(input:checked) label {
+    color: maroon;
+}
 
 
 
