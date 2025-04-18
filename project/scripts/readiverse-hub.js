@@ -92,6 +92,8 @@ const books = [
     }
 ];
 
+
+
 createBookCard(books);
 
 // Navigation 
@@ -104,41 +106,41 @@ homeLink.addEventListener("click", () => {
     createBookCard(books);
 });
 
-const oldLink = document.querySelector("#oldLink");
-oldLink.addEventListener("click", () => {
-    removeActiveClass();
-    oldLink.classList.add("active");
-    updatePageTitle("Old Books");
 
-    const oldBooks = books.filter(book => {
-        const yearPublished = parseInt(book.published.split(",")[0]);
-        return yearPublished < 1950;
+const oldLink = document.querySelector("#oldLink");
+
+if (oldLink) {
+    oldLink.addEventListener("click", () => {
+        removeActiveClass();
+        oldLink.classList.add("active");
+        updatePageTitle("Old Books");
+
+        const oldBooks = books.filter(book => {
+            const yearPublished = parseInt(book.published.split(",")[0]);
+            return yearPublished < 1950;
+        });
+        createBookCard(oldBooks);
     });
-    createBookCard(oldBooks);
-});
+}
+
 
 const newLink = document.querySelector("#newLink");
-newLink.addEventListener("click", () => {
-    removeActiveClass();
-    newLink.classList.add("active");
-    updatePageTitle("New Books");
 
-    const newBooks = books.filter(book => {
-        const yearPublished = parseInt(book.published.split(",")[0]);
-        return yearPublished > 2000;
+if (newLink) {
+    newLink.addEventListener("click", () => {
+        removeActiveClass();
+        newLink.classList.add("active");
+        updatePageTitle("New Books");
+
+        const newBooks = books.filter(book => {
+            const yearPublished = parseInt(book.published.split(",")[0]);
+            return yearPublished > 2000;
+        });
+        createBookCard(newBooks);
     });
-    createBookCard(newBooks);
-});
+}
 
-const recommendLink = document.querySelector("#recommendLink");
-recommendLink.addEventListener("click", () => {
-    removeActiveClass();
-    recommendLink.classList.add("active");
-    updatePageTitle("Recommend");
 
-    const recommendedBooks = books.filter(b => b.recommended);
-    createBookCard(recommendedBooks);
-});
 
 const contactLink = document.querySelector("#contactLink");
 contactLink.addEventListener("click", () => {
@@ -146,9 +148,15 @@ contactLink.addEventListener("click", () => {
     contactLink.classList.add("active");
     updatePageTitle("Contact");
 
-    toggleHomeOnlyNav(false); // Hide "Old" and "New"
-    document.querySelector(".container").innerHTML = ``;
+    toggleHomeOnlyNav(false); // Hide "Old" and "New" links
+
+    // Clear previous content
+    const container = document.querySelector(".container");
+    container.innerHTML = "";  // Clear any existing content inside the container
+
+    container.appendChild(contactForm);  // Add form to the container
 });
+
 
 // Show/hide navigation items
 function toggleHomeOnlyNav(show) {
@@ -199,8 +207,6 @@ function createBookCard(filteredBooks) {
     });
 }
 
-// Default state
-homeLink.classList.add("active");
 
 // Mobile menu
 const hamButton = document.querySelector('#menu');
@@ -213,6 +219,19 @@ hamButton.addEventListener('click', () => {
     header.classList.toggle('hidden');
 });
 
+
+// Default active state based on current page
+const currentPage = window.location.pathname;
+
+if (currentPage.includes("readiverse-hub.html")) {
+    homeLink.classList.add("active");
+} else if (currentPage.includes("recommend.html")) {
+    recommendLink.classList.add("active");
+    toggleHomeOnlyNav(false);
+} else if (currentPage.includes("contact-us.html")) {
+    contactLink.classList.add("active");
+    toggleHomeOnlyNav(false);
+}
 
 
 
