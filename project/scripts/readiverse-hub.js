@@ -145,7 +145,7 @@ const recommendLink = document.querySelector("#recommendLink");
 recommendLink.addEventListener("click", () => {
     removeActiveClass();
     recommendLink.classList.add("active");
-    updatePageTitle("Recommend");
+    updatePageTitle("Book Recommendation Form");
 
     // Hide "Old" and "New" links for the Recommend page
     toggleHomeOnlyNav(false);
@@ -161,7 +161,7 @@ const contactLink = document.querySelector("#contactLink");
 contactLink.addEventListener("click", () => {
     removeActiveClass();
     contactLink.classList.add("active");
-    updatePageTitle("Contact");
+    updatePageTitle("Contact Us");
 
     // Hide "Old" and "New" links for the Contact page
     toggleHomeOnlyNav(false);
