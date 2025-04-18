@@ -156,6 +156,14 @@ recommendLink.addEventListener("click", () => {
     // Clear previous content and show recommendations
     const container = document.querySelector(".container");
     container.innerHTML = "";  // Clear any existing content
+
+    const recommendedBooks = JSON.parse(localStorage.getItem('recommendedBooks')) || [];
+
+    if (recommendedBooks.length === 0) {
+        document.querySelector(".recommendations").innerHTML = "<p>No recommended books yet. Be the first to recommend one!</p>";
+    } else {
+        createBookCard(recommendedBooks);
+    }
 });
 
 
