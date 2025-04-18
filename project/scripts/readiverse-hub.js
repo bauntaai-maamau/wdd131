@@ -141,6 +141,21 @@ if (newLink) {
 }
 
 
+const recommendLink = document.querySelector("#recommendLink");
+recommendLink.addEventListener("click", () => {
+    removeActiveClass();
+    recommendLink.classList.add("active");
+    updatePageTitle("Recommend");
+
+    // Hide "Old" and "New" links for the Recommend page
+    toggleHomeOnlyNav(false);
+
+    // Clear previous content and show recommendations
+    const container = document.querySelector(".container");
+    container.innerHTML = "";  // Clear any existing content
+});
+
+
 
 const contactLink = document.querySelector("#contactLink");
 contactLink.addEventListener("click", () => {
@@ -148,14 +163,16 @@ contactLink.addEventListener("click", () => {
     contactLink.classList.add("active");
     updatePageTitle("Contact");
 
-    toggleHomeOnlyNav(false); // Hide "Old" and "New" links
+    // Hide "Old" and "New" links for the Contact page
+    toggleHomeOnlyNav(false);
 
-    // Clear previous content
+    // Clear previous content and add the contact form
     const container = document.querySelector(".container");
-    container.innerHTML = "";  // Clear any existing content inside the container
-
-    container.appendChild(contactForm);  // Add form to the container
+    container.innerHTML = "";  // Clear any existing content
+    // container.appendChild(contactForm);  // Add the contact form
 });
+
+
 
 
 // Show/hide navigation items
