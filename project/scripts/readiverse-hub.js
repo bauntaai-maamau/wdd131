@@ -94,7 +94,10 @@ const books = [
 
 
 
-createBookCard(books);
+if (window.location.pathname.includes("readiverse-hub.html")) {
+    createBookCard(books); // ✅ Only runs on Home page
+}
+
 
 // Navigation 
 const homeLink = document.querySelector("#homeLink");
