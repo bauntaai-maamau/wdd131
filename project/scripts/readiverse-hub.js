@@ -84,7 +84,7 @@ const books = [
         imageUrl: "images/5am-club.jpg"
     },
     {
-        bookName: "Reach Dad Poor Dad",
+        bookName: "Rich Dad Poor Dad",
         author: "Robert T. Kiyosaki",
         published: "1997",
         pages: 336,
@@ -255,5 +255,10 @@ if (currentPage.includes("readiverse-hub.html")) {
     toggleHomeOnlyNav(false);
 }
 
+function saveRecommendedBook(book) {
+    let recommended = JSON.parse(localStorage.getItem('recommendedBooks')) || [];
+    recommended.push(book);
+    localStorage.setItem('recommendedBooks', JSON.stringify(recommended));
+}
 
 
