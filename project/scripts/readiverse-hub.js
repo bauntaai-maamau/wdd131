@@ -228,11 +228,13 @@ function createBookCard(filteredBooks) {
 }
 
 
-// Mobile menu
+
+// Mobile menu toggle
 const hamButton = document.querySelector('#menu');
 const header = document.querySelector('h1');
 const navigation = document.querySelector('.navigation');
 
+// Keep the menu open after clicking a link
 hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
     navigation.classList.toggle('open');
